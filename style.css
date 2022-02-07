@@ -23,7 +23,7 @@ body{
       background: rgb(6, 115, 4);
       grid-area: content;
       color: #fff;
-      padding: 30px;
+      padding: 10px;
   
       
       
@@ -43,16 +43,24 @@ body{
       background: rgb(5, 182, 23);
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 50px 220px 1fr;
+      grid-template-rows: 50px (1fr+1em) 1fr;
       grid-gap: 5px;
       grid-template-areas:
         "header"
         "content"
         "footer";
-       
     }
-  
+
+    img {
+      width: 100%;
+    }
+
+
+
+
     @media (min-width: 570px){
+     
+    
       .container{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50px 1fr 1fr;
@@ -74,8 +82,9 @@ text-align: center;
 
 
 
+
 form{
-    margin: 10px 10px;
+    margin: 5px 5px;
     padding: 1em;
     border: 1px solid rgb(3, 69, 3);
     border-radius: 1em;
@@ -83,14 +92,14 @@ form{
 }
 
 .form-group{
-    padding: 0.25em;
-    margin: 10px auto;
+    padding: 0.125em;
+    margin: 10px 0;
     
 }
 
 label{
     display: inline-block;
-    text-align: right;
+    text-align: left;
 }
 
 input,
