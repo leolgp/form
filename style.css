@@ -119,3 +119,10 @@ textarea {
   color: chartreuse;
   font-size: 0.6em;
 }
+
+#subtitle{
+  display: flex;
+  justify-self: left;
+  color: chartreuse;
+  font-size: 1em;
+}
