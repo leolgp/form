@@ -21,7 +21,10 @@
 
         </div>
         <div class="item2 flex">
-            <img src="src/image/alien-interview-2.png" alt="alien interviewing a human">
+            <h2 id="subtitle">Why should we hire you?</h2>
+            <div class="quadro-foto">
+            <img src="src/image/interview.png" alt="alien interviewing a human" id="foto">
+            </div>
             <p id="description">Thanks for aplying for our space jobs</p>
 
         </div>
@@ -34,16 +37,16 @@
 
                 <div class="form-group">
                     <label for="number">Age</label>
-                    <input type="number" id="number" min="10" max="99" required placeholder="age" >
+                    <input type="number" id="number" min="10" max="99" required placeholder="age">
                 </div>
 
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" required placeholder="type your email">
                 </div>
 
                 <div class="form-group">
-                    <label for="abducted">Have you ever been abduted?</label>
+                    <label for="abducted">Have you ever been abduted?</label><br>
                     <input type="radio" id="abducted" value="yes" name="abducted">Yes
                     <input type="radio" id="abducted" value="no" name="abducted">No
                     <input type="radio" id="abducted" value="not-sure" name="abducted">Not sure
@@ -64,14 +67,17 @@
                 <div class="form-group">
                     <label for="about-job">How did you hear about this job?</label>
                     <br>
-                        <input type="checkbox" id="about-job" value="galaxy"> Galaxy
-                        <input type="checkbox" id="about-job" value="solar-system"> Earth solar-system
-                        <input type="checkbox" id="about-job" value="galaxy"> Earth
+                    <input type="checkbox" id="about-job" value="galaxy"> Galaxy <br>
+
+                    <input type="checkbox" id="about-job" value="solar-system"> Earth solar-system <br>
+
+                    <input type="checkbox" id="about-job" value="galaxy"> Earth <br>
+
 
                 </div>
                 <div class="form-group">
                     <label for="hire"> Why should we hire you?</label>
-                                       <textarea id="hire" ></textarea>
+                    <textarea id="hire"></textarea>
 
                 </div>
                 <br>
