@@ -25,6 +25,7 @@ body{
       color: #fff;
       padding: 30px;
       
+      
     }
   
     .item3 {
@@ -50,7 +51,7 @@ body{
        
     }
   
-    @media (min-width: 500px){
+    @media (min-width: 570px){
       .container{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50px 1fr 1fr;
@@ -75,17 +76,17 @@ text-align: center;
 }
 
 form{
-    margin: 10px auto;
-    width: 600px;
+    margin: 10px 10px;
+    width: 500px;
     padding: 1em;
-    border: 1px solid lightgreen;
+    border: 1px solid rgb(3, 69, 3);
     border-radius: 1em;
     text-align: left;
 }
 
 .form-group{
     padding: 0.25em;
-    margin: 2px auto;
+    margin: 10px auto;
     
 }
 
