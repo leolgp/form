@@ -20,7 +20,7 @@
 
         </div>
         <div class="item2 flex">
-            <img src="src/image/alien-interview-2.png">
+            <img src="src/image/alien-interview-2.png" alt="alien interviewing a human">
             <p id="description">Thanks for aplying for our space jobs</p>
 
         </div>
@@ -28,12 +28,12 @@
             <form id="survey-form" method="get">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" required placeholder="Full name">
                 </div>
 
                 <div class="form-group">
-                    <label for="age">Age</label>
-                    <input type="number" id="age" min="10" max="99">
+                    <label for="number">Age</label>
+                    <input type="number" id="number" min="10" max="99" required placeholder="age" >
                 </div>
 
                 <div>
@@ -43,14 +43,14 @@
 
                 <div class="form-group">
                     <label for="abducted">Have you ever been abduted?</label>
-                    <input type="radio" id="abducted" value="yes">Yes
-                    <input type="radio" id="abducted" value="no">No
-                    <input type="radio" id="abducted" value="not-sure">Not sure
+                    <input type="radio" id="abducted" value="yes" name="abducted">Yes
+                    <input type="radio" id="abducted" value="no" name="abducted">No
+                    <input type="radio" id="abducted" value="not-sure" name="abducted">Not sure
                 </div>
 
                 <div class="form-group">
                     <label for="language">What is your alien language skill?</label>
-                    <select id="language">
+                    <select id="dropdown">
                         <option disabled selected value>select your language skill</option>
                         <option value="none">none</option>
                         <option value="basic">basic</option>
@@ -74,7 +74,7 @@
 
                 </div>
                 <br>
-                <input type="submit" value="Send">
+                <input type="submit" value="Send" id="submit">
 
             </form>
 
