@@ -25,10 +25,10 @@
 
         </div>
         <div class="item3 flex">
-            <form>
+            <form id="survey-form" method="get">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" required>
                 </div>
 
                 <div class="form-group">
@@ -38,7 +38,7 @@
 
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" required>
                 </div>
 
                 <div class="form-group">
@@ -73,6 +73,8 @@
                                        <textarea id="hire" ></textarea>
 
                 </div>
+                <br>
+                <input type="submit" value="Send">
 
             </form>
 
