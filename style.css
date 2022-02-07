@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.4;
+    color: black;
+    margin: 0;
+}
+.item1 {
+    background: rgb(2, 62, 1);
+    grid-area: header;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.item2 {
+      background: rgb(6, 115, 4);
+      grid-area: content;
+      color: #fff;
+      padding: 30px;
+      
+    }
+  
+    .item3 {
+      background: rgb(98, 243, 96);
+      grid-area: footer;
+    }
+  
+
+  
+    .container {
+      font-size: 1em;
+      min-height: 300px;
+      width: 100%;
+      background: rgb(5, 182, 23);
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px 1fr 1fr;
+      grid-gap: 5px;
+      grid-template-areas:
+        "header"
+        "content"
+        "footer";
+       
+    }
+  
+    @media (min-width: 500px){
+      .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 1fr 1fr;
+        grid-template-areas:
+          "header header"
+          "content footer"
+          "content footer"
+         ;
+      }
+    }
+  
+.flex{
+ display: flexbox;
+text-align: center;
+
+}
+
+
+
+.flex p{
+    font-size: 0.6em;
+}
+
+form{
+    margin: 10px auto;
+    width: 600px;
+    padding: 1em;
+    border: 1px solid lightgreen;
+    border-radius: 1em;
+    text-align: left;
+}
+
+.form-group{
+    padding: 0.25em;
+    margin: 2px auto;
+    
+}
+
+label{
+    display: inline-block;
+    width: 270px;
+    text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+    text-align: left;
+  /* Uniform text field size */
+  box-sizing: border-box;
+  /* Match form field borders */
+  border: 1px solid rgb(45, 155, 15);
+}
